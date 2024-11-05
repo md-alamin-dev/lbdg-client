@@ -1,0 +1,47 @@
+/* Custom styles for Swiper arrows */
+
+.custom-swiper {
+    position: relative;
+  }
+  
+  .custom-swiper:hover .swiper-button-next,
+  .custom-swiper:hover .swiper-button-prev {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Customize arrow buttons */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #FF0000;
+    background-color: #00000080; /* Semi-transparent background */
+    width: 40px; /* Adjust overall button size */
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Adjust arrow SVG size */
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  /* Hover effect for arrows */
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: #000000b3;
+  }
+  
+  /* Position adjustments for arrows */
+  .swiper-button-prev {
+    left: 10px; /* Adjust as needed */
+  }
+  
+  .swiper-button-next {
+    right: 10px; /* Adjust as needed */
+  }
+  

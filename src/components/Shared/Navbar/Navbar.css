@@ -1,0 +1,17 @@
+/* Base styles for the NavLink */
+.nav-link {
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover state (only applies to inactive links) */
+  .nav-link:not(.nav-link-active):hover {
+    color: #FF0000;
+  }
+  
+  /* Active state */
+  .nav-link-active {
+    color: #8B0000;
+    font-weight: bold;
+  }
+  
