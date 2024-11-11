@@ -5,10 +5,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './Banner.css';
-import { FiArrowRight } from 'react-icons/fi';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 
 function Banner() {
+
   const slidesData = [
     {
       img: 'https://i.ibb.co/Tc7ckNs/4.png',
@@ -29,7 +29,7 @@ function Banner() {
 
   return (
 
-    <div className="relative min-h-screen">
+    <div className="relative md:min-h-screen">
 
       <Swiper
 

@@ -6,21 +6,21 @@ const MainLayout = () => {
 
     return (
 
-        <div className="max-w-full mx-auto">
+        <div className="">
 
-        {/* Header */}
-        <header>
-            <Navbar></Navbar>
-        </header>
+            {/* Header */}
+            <header>
+                <Navbar></Navbar>
+            </header>
 
-        <main className="min-h-[calc(100vh-284px)]">
-            <Outlet></Outlet>
-        </main>
+            <main className="min-h-[calc(100vh-284px)]">
+                <Outlet></Outlet>
+            </main>
 
-        {/* Footer  */}
-        <Footer></Footer>
+            {/* Footer  */}
+            <Footer></Footer>
 
-    </div>
+        </div>
     );
 };
 

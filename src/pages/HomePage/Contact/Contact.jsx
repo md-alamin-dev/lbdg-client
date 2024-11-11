@@ -2,13 +2,16 @@ import { CgMail } from "react-icons/cg";
 import { GrLocation } from "react-icons/gr";
 
 const Contact = () => {
+
   return (
-    <div>
+
+    <div className="mt-10">
+
       <div
         className="relative bg-cover bg-center w-full h-96 flex items-center py-6 md:py-14"
         style={{ backgroundImage: "url(https://i.ibb.co/kKczVWn/contact.png)" }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-85"></div>
 
         <div className="relative z-10 text-white border-4 md:border-8 border-[#FF0000] w-11/12 h-full mx-auto flex flex-col items-center justify-center p-4">
 

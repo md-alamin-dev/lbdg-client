@@ -8,7 +8,9 @@ import Gallery from "../../pages/Gallery/Gallery";
 import AboutUs from "../../pages/AboutUs/AboutUs";
 import ContactUs from "../../pages/ContactUs/ContactUs";
 import Login from "../../pages/Authentication/Login/Login";
-import SignUp from "../../pages/Authentication/SignUp/SignUp";
+import RegisterStep1 from "../../pages/Authentication/Register/RegisterStep1";
+import RegisterStep2 from "../../pages/Authentication/Register/RegisterStep2";
+import Register from "../../pages/Authentication/Register/Register";
 
 const router = createBrowserRouter([
 
@@ -51,20 +53,30 @@ const router = createBrowserRouter([
                 path: "/contact-us",
                 element: <ContactUs></ContactUs>
             },
-            
+
             {
                 path: "/login",
                 element: <Login></Login>
             },
 
             {
-                path: "/sign-up",
-                element: <SignUp></SignUp>
-            },
-          
+                path: "/register",
+                element: <Register />, 
+                children: [
+                    {
+                        path: "", 
+                        element: <RegisterStep1 />
+                    },
+                    {
+                        path: "step2", 
+                        element: <RegisterStep2 />
+                    }
+                ]
+            }
+
         ]
     },
 
 ]);
 
-  export default router;
+export default router;
